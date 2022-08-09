@@ -1,0 +1,18 @@
+{
+  "private": "true",
+  "scripts": {
+    "dev": "pnpm -C examples dev"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4",
+    "vue": "^3.2.36"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "vite": "^3.0.4"
+  }
+}
