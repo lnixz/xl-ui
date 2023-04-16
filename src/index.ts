@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import SFCButton from "./SFCButton.vue";
-import JSXButton from "./JSXButton";
+import App from "./App";
+import 'virtual:uno.css';
 
-createApp(JSXButton).mount("#app");
+createApp(App).mount("#app");

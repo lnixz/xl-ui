@@ -3,6 +3,8 @@ import XButton from "./button";
 import SFCButton from "./SFCButton.vue";
 import JSXButton from "./JSXButton";
 
+import 'virtual:uno.css';
+
 export { XButton, SFCButton, JSXButton };
 
 export default {

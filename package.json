@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "unocss": "^0.51.4",
     "vite": "^4.2.1"
   },
   "dependencies": {
