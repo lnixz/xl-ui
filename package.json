@@ -1,0 +1,21 @@
+{
+  "name": "xinl-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  }
+}
