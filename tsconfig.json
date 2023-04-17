@@ -2,15 +2,13 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist/types",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "lib": ["ES2015"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "./**/*.*",
-    "./shims-vue.d.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["./**/*.*", "./shims-vue.d.ts"],
+  "exclude": ["node_modules"],
   "esModuleInterop": true,
-  "allowSyntheticDefaultImports": "true",
+  "allowSyntheticDefaultImports": "true"
 }

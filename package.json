@@ -11,12 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@iconify/json": "^2.2.51",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "typescript": "^5.0.4",
     "unocss": "^0.51.4",
     "vite": "^4.2.1"
   },
   "dependencies": {
+    "@unocss/reset": "^0.51.4",
     "vue": "^3.2.47"
   }
 }
