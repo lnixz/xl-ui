@@ -8,23 +8,25 @@ export default defineConfig({
     lastUpdated: true,
     cleanUrls: true,
     head: [
-        ['meta', { name: 'theme-color', content: '#3c8772' }],
-        [
-            'script',
-            {
-                src: 'https://cdn.usefathom.com/script.js',
-                'data-site': 'AZBRSFGG',
-                'data-spa': 'auto',
-                defer: ''
-            }
-        ]
+        ['link', { rel: 'icon', href: '/logo-small.svg', type: 'image/svg+xml' }]
     ],
-
     themeConfig: {
-        logo: '/logo.svg',
-        sidebar: {
-            '/guide/': sidebarGuide(),
-        },
+        logo: '/logo-small.svg',
+        sidebar: [
+            { text: '指南', link: '/guide/' },
+            { text: '快速开始', link: '/components/' },
+            {
+                text: '通用',
+                items: [
+                    { text: 'Button 按钮', link: '/components/button/' }
+                ]
+            },
+            { text: '导航' },
+            { text: '反馈' },
+            { text: '数据录入' },
+            { text: '数据展示' },
+            { text: '布局' },
+        ],
         editLink: {
             pattern: 'https://github.com/ZXinL-CN/xinl-ui/edit/main/docs/:path',
             text: 'Edit this page on GitHub'
@@ -51,21 +53,3 @@ export default defineConfig({
         }
     }
 });
-
-
-function sidebarGuide() {
-    return [
-        { text: '快速开始', link: '/' },
-        {
-            text: '通用',
-            items: [
-                { text: 'Button 按钮', link: '/components/button/' }
-            ]
-        },
-        { text: '导航' },
-        { text: '反馈' },
-        { text: '数据录入' },
-        { text: '数据展示' },
-        { text: '布局' },
-    ]
-}

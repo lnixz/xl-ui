@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import XinlUI from '../../../src/entry';
+import '../style/vars.css';
 
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css';
 import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue';
