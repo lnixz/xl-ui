@@ -1,7 +1,7 @@
 {
   "name": "xinl-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "A more practical UI component library",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

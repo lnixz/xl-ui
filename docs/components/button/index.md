@@ -2,7 +2,7 @@
 
 :::demo 使用`size`、`color`、`pain`、`round`属性来定义 Button 的样式。
 
-```html
+```vue
 <div>
   <div>
     <XButton>基础按钮</XButton>
