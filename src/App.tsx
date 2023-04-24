@@ -1,5 +1,5 @@
 import { defineComponent, h } from "vue";
-import XButton from "./button";
+import XButton from "./button/Button";
 export default defineComponent({
   name: "App",
   render() {
