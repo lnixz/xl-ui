@@ -14,6 +14,12 @@ const colors = [
 ];
 
 const borderWidth = [0, 2, 4, 6, 8, 10];
+const borderRadius = [0, 2, 4, 6, 8, 10];
+const width = ['auto', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const height = ['auto', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const paddingX = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const cursor = ['default','not-allowed', 'pointer'];
+const opacity = ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'];
 
 const icons = [
   "i-mdi-magnify",
@@ -51,6 +57,12 @@ const safelist = [
   ...colors.map((v) => `border-${v}-400`),
   ...colors.map((v) => `border-${v}-500`),
   ...borderWidth.map((c) => `border-${c}`),
+  ...borderRadius.map((c) => `rounded-${c}`),
+  ...width.map((c) => `w-${c}`),
+  ...height.map((c) => `h-${c}`),
+  ...paddingX.map((c) => `px-${c}`),
+  ...cursor.map((c) => `cursor-${c}`),
+  ...opacity.map((c) => `opacity-${c}`),
   ...icons.map((i) => `${i}`),
 ];
 
