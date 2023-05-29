@@ -11,35 +11,34 @@ export type IColor =
   | "purple"
   | "pink";
 
-export const props = {
-  color: {
-    type: String as PropType<IColor>,
-    default: "blue", // 设定默认颜色
-  },
-  plain: {
-    type: Boolean,
-    default: false,
-  },
-  round: {
-    type: Boolean,
-    default: false,
-  },
-  circle: {
-    type: Boolean,
-    default: false,
-  },
-  icon: {
-    type: String,
-    default: "",
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  }
-};
 export default defineComponent({
   name: "XButton",
-  props,
+  props:{
+    color: {
+      type: String as PropType<IColor>,
+      default: "blue", // 设定默认颜色
+    },
+    plain: {
+      type: Boolean,
+      default: false,
+    },
+    round: {
+      type: Boolean,
+      default: false,
+    },
+    circle: {
+      type: Boolean,
+      default: false,
+    },
+    icon: {
+      type: String,
+      default: "",
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    }
+  },
   setup(props, { slots }) {
     return () => (
       <button
