@@ -4,7 +4,7 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
 
 const rollupOptions = {
-  external: ["vue", "vue-router"],
+  external: ["vue"],
   output: {
     globals: {
       vue: "Vue",
@@ -20,7 +20,10 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: false,
+    sourcemap: true,
+    reportCompressedSize: true,
+    cssCodeSplit: true,
+    minify: "esbuild",
     lib: {
       entry: "./src/entry.ts",
       name: "XinlUI",
