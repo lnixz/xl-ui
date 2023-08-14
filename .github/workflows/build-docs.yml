@@ -13,11 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Set up Node.js and pnpm
         uses: actions/setup-node@v2
         with:
           node-version: 18
           node-package-manager: pnpm
+      - name: Add pnpm to PATH
+        run: echo "::add-path::/path/to/pnpm"
 
       - name: Install Dependencies
         run: pnpm install
