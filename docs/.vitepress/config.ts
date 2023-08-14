@@ -51,5 +51,6 @@ export default defineConfig({
         config: (md) => {
             md.use(demoBlockPlugin);
         }
-    }
+    },
+    base: '/xinl-ui/'
 });
